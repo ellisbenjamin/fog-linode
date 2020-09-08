@@ -10,8 +10,10 @@ module Fog
 
     autoload :Compute, File.expand_path('linode/compute', __dir__)
     autoload :DNS, File.expand_path('linode/dns', __dir__)
+    autoload :Storage, File.expand_path('linode/storage', __dir__)
 
     service(:compute, 'Compute')
     service(:dns, 'DNS')
+    service(:storage, 'Storage')
   end
 end
